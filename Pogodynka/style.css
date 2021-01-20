@@ -1,0 +1,62 @@
+body{
+    font-family: 'Varela Round', sans-serif;
+    
+}
+#weatherContainer {
+    margin-top:150px;
+    text-align: center;
+    color:white;
+    padding:75px;
+    overflow:hidden;
+    border-radius: 15px;
+    position: absolute;
+    
+}
+
+#weatherContainer h1 {
+    text-align: center;
+    font-size: 64px;
+}
+#searchContainer {
+    
+    position: absolute;  
+    padding: 15px;
+    position: center;
+}
+#searchContainer input {
+    width: 315px;
+
+}
+#searchBtn{
+    margin-top:15px;
+    text-align: right;
+}
+
+.searchControl {
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+#weatherMain {
+    display: block;
+    margin-bottom: 20px;
+}
+#weatherMain div {
+    display: inline-block;
+}
+#weatherDescriptionHeader {
+    font-size: 28px;
+    vertical-align: 50%;
+}
+#temperature {
+    font-size: 38px;
+    vertical-align: 25%;
+}
+.bottom-details {
+    display: block;
+    font-size: 24px;
+    text-align: right;
+}
+#windSpeed , #humidity {
+    text-align: center;
+}
