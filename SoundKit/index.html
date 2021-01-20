@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DrumKit</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <h1>DRUM KIT</h1>
+    <audio src="sounds/boom.wav" id="boom"></audio>
+    <audio src="sounds/clap.wav" id="clap"></audio>
+    <audio src="sounds/hihat.wav" id="hihat"></audio>
+    <audio src="sounds/kick.wav" id="kick"></audio>
+    <audio src="sounds/openhat.wav" id="openhat"></audio>
+    <audio src="sounds/ride.wav" id="ride"></audio>
+    <audio src="sounds/snare.wav " id="snare"></audio>
+    <audio src="sounds/tink.wav" id="tink"></audio>
+    <audio src="sounds/tom.wav" id="tom"></audio>
+
+    <div class="sounds">
+       
+        <span class="boom"><kbd>A</kbd>  Boom</span>
+        <span class="clap"><kbd>S</kbd>  Clap</span>
+        <span class="hihat"><kbd>D</kbd> Hihat</span>
+        <span class="kick"><kbd>F</kbd>  Kick</span>
+        <span class="openhat"><kbd>G</kbd> Openhat</span>
+        <span class="ride"><kbd>H</kbd>  Ride</span>
+        <span class="snare"><kbd>J</kbd> Snare</span>
+        <span class="tink"><kbd>K</kbd>  Tink</span>
+        <span class="tom"><kbd>L</kbd>   Tom</span>
+
+    </div>
+
+<div id="buttons">
+
+    <div class="btn-group-vertical">
+
+    <button id="recordBtn1"  class="btn btn-danger record-button">Kanał 1</button>
+    <button id="recordBtn2" class="btn btn-danger record-button">Kanał 2</button>
+    <button id="recordBtn3" class="btn btn-danger record-button">Kanał 3</button>
+    <button id="recordBtn4" class="btn btn-danger record-button">Kanał 4</button>
+
+    </div>
+
+    <div class="btn-group-vertical">
+
+    <button id="playBtn1"  class="btn btn-outline-dark play-button">Odtwórz kanał 1</button>
+    <button id="playBtn2" class="btn btn-outline-dark play-button">Odtwórz kanał 2</button>
+    <button id="playBtn3" class="btn btn-outline-dark play-button">Odtwórz kanał 3</button>
+    <button id="playBtn4" class="btn btn-outline-dark play-button">Odtwórz kanał 4</button>
+
+    </div>
+
+</div>
+    
+    <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>
