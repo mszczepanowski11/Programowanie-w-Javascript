@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang=pl dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="note.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <title>Notatki</title>
+
+  </head>
+  <div id = "newNoteId" class = "newNote rounded contrainer text-white border border-danger h-50">
+    <row class="text-secondary">Nowa notatka</row>
+    <form id="form" action="#" method ="POST">
+      <div class="row">
+        <input style="height:4vh;" id = "titleInput" class = "text-white mt-5 mx-auto w-75 form-control bg-secondary border-danger" type="text" name="title" placeholder="Tytuł" required>
+      </div>
+      <div class="row">
+        <textarea id = "contentArea" style = "resize: none; height:20vh;" rows="8" maxlength="256" class = "mt-5 text-white mx-auto w-75 form-control bg-secondary border-danger" type="textarea" name="content" placeholder="Treść" required></textarea>
+      </div>
+      <div class="row">
+        <div class="col h-25">
+          <select id= "selectColor" name="color" class=" h-100 form-control w-25 mx-5 mt-2 square selectColor" style="background-color:yellow;">
+            <option value="yellow" style="background-color:yellow;" selected></option>
+            <option value="red" style="background-color:red;"></option>
+            <option value="blue" style="background-color:blue;"></option>
+            <option value="pink" style="background-color:pink;"></option>
+            <option value="green" style="background-color:green;"></option>
+            <option value="violet" style="background-color:violet;"></option>
+            <option value="lightgreen" style="background-color:lightgreen;"></option>
+          </select>
+        </div>
+        <div class="col-6">
+          <input class = "form-check-input rectangle" type="checkbox" name="pinned" id = "pinned">
+          <label class="form-check-label ml-3" for="pinned">
+  Przypięty?
+</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6 mt-2">
+        <input type = "button" class = "btn btn-success align-center w-50 h-100" onclick="submitForm()" value="Dodaj"></div>
+      <div class="col-6 mt-2">
+      <input type = "button" class = "btn btn-danger align-center w-50 h-100" onclick="document.getElementById('newNoteId').style.visibility = 'hidden';document.getElementById('form').reset()" value="Anuluj"></div>
+    </div>
+    </div>
+  </div>
+
+  <body>
+    <div class="contrainer-fluid bg-dark" style="min-height:100vh; overflow:hidden;">
+      <div class = "row">
+        <div class="col text-white float-right">
+          <a onclick="document.getElementById('newNoteId').style.visibility = 'visible';" ><img class = "float-right" src="plus.png" width="50" height = "50"/></a>
+        </div>
+      </div>
+      <div id = "Notes" class="row">
+
+      </div>
+
+
+    </div>
+        <script src="gui.js"></script>
+
+  </body>
+
+</html>
